@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    align-items: center;
+    background-image: url("img/animeSignUp.jpg");
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+}
+@font-face {
+    font-family: Ribeye;
+    src: url("fonts/ribeye.ttf");
+}
+.login{
+    opacity: 0.85;
+    padding: 10px;
+    width: 500px;
+    color:white;
+    height: 300px;
+    background-color: #3E01A4;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: Ribeye;
+}
+.empass{
+    margin-left: 75px;
+    margin-right: 75px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.empass > input{
+    height: 30px;
+}
+::placeholder{
+    color: black;
+    font-family: Ribeye;
+    font-size: 23px;
+}
+.buttonPlusQuestion{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:auto;
+    grid-gap: 10px;
+    color: white;
+}
+a,a:visited,a:active{
+    color:white;
+}
+.buttonPlusQuestion > a{
+    margin-left: 150px;
+}
+#buttonSignUp{
+    color: black;
+    font-size: 25px;
+    font-family: Ribeye;
+    margin-top: 15px;
+    height: 40px;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
