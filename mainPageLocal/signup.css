@@ -1,7 +1,7 @@
 body{
     display: flex;
     align-items: center;
-    background-image: url("img/animeSignUp.jpg");
+    background-image: url("imgSignUp/animeSignUp.jpg");
     -moz-background-size: 100%; /* Firefox 3.6+ */
     -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 100%; /* Opera 9.6+ */
@@ -9,7 +9,7 @@ body{
 }
 @font-face {
     font-family: Ribeye;
-    src: url("fonts/ribeye.ttf");
+    src: url("fontsLogin/ribeye.ttf");
 }
 .login{
     opacity: 0.85;

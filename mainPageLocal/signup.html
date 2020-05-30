@@ -9,12 +9,14 @@
     <div class="login">
         <h1>Login</h1>
         <div class="empass">
-        <input type="email" name="" id="emailLogin" placeholder="Email">
-        <input type="password" name="" id="passwordLogin" placeholder="Password">
+            <form action="signup.php" method="get">
+        <input type="email" name="emailSignUp" id="emailSignUp" placeholder="Email">
+        <input type="password" name="passwordSignUp" id="passwordSignUp" placeholder="Password">
         </div>
         <div class="buttonPlusQuestion">
-            <button type="submit" id="buttonSignUp">Sign up</button>
+            <button type="submit" id="buttonSignUp" name="submitSignUp">Sign up</button>
             <a href="">You have a account?</a>
+            </form>
         </div>
     </div>
 </body>
