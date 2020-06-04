@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Как Канеки Кен стал гулем?</h3>",
+        answers: [
+            "Родился гулем",
+            "Ему пересадили орган гуля после несчатсного случаяГрафических редакторов",
+            "Он сам захотел им стать и попросил пересадить органы гуля ему"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Какой глаз у Канеки был красным?</h3>",
+        answers: [
+            "Левый",
+            "Правый",
+            "Оба"
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>Кто такой Амон Котаро?</h3>",
+        answers: [
+            "Гуль",
+            "Следователь по гулям",
+            "Просто человек, житель Токио."
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Что такое какуган?</h3>",
+        answers: [
+            "Охотничий орган гуля",
+            "Глаз гуля",
+            "Оружие Голубей"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>В каком районе находилось Антейку?</h3>",
+        answers: [
+            "В 13-м районе",
+            "В 20-м районе",
+            "В 1-м районе",
+			"Acer"
+        ],
+        correct: [2]
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>Tokyan Gul</h3>
+		<p><img src="https://vignette.wikia.nocookie.net/tokyoghoul/images/8/8b/TG_Box_Set_Cover.jpg/revision/latest/top-crop/width/360/height/450?cb=20160220211758&path-prefix=ru" /></p>
+        <button class="btn btn-large">Начать тест</button>
+    </div>
+</body>
+</html>
