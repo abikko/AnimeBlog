@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hello, world!</title>
+    <style>
+        body{
+         background-image: url(https://truth.bahamut.com.tw/s01/202002/e2111045d166f87d6b90e2c07a8a5074.JPG);
+        }
+        .container {
+            width: 1920px;
+            height: 1080px;
+        }
+        .List{
+            display: grid;
+            grid-template-rows:15% 1fr;
+        }
+        .menu-main {
+            position: absolute;
+            width: 100%;
+            height: 90px;
+            left: 0px;
+            top: 0px;
+            background: #3E01A4 no-repeat;
+        }
+        
+        .menu-main li {
+            display: inline-block;
+        }
+        
+        .menu-main li:after {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .menu-main a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-family: Ribeye;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 0px;
+            margin: 0 60px 0 10px;
+            font-size: 25px;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: color .2s;
+        }
+        
+        .menu-main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .menu-main > li {
+            width: 20%;
+            float: left;
+            position: relative;
+        }
+        
+        .menu-main> li > a {
+            text-transform: uppercase;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        
+        .menu-main li a:hover {
+            color: lightgrey;
+        }
+        
+        .submenu-link:after {
+            color: inherit;
+            margin-left: 10px;
+        }
+        
+        .submenu {
+            background: #3E01A4;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            z-index: 5;
+            width: 180px;
+            opacity: 0;
+            transform: scaleY(0);
+            transform-origin: 0 0;
+            transition: .5s ease-in-out;
+        }
+        
+        .submenu a {
+            color: white;
+            text-align: left;
+            padding: 12px 15px;
+            font-size: 13px;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+        }
+        
+        .submenu li:last-child a {
+            border-bottom: none;
+        }
+        
+        .menu-main > li:hover .submenu {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+        .myAnime{
+            background: #8B00FF;
+            width: 100%;
+            height: 900px;
+        }
+        .anim{
+            display: grid;
+            grid-template-rows:60% 30% 10%;
+        }
+        .Discription{
+            display: grid;
+            grid-template-columns:27% 1fr ;
+        }
+        .Quiz{
+            display: grid;
+            grid-template-columns:1fr 27% ;
+        }
+        .OnePice{
+            width: 240px;
+            height: 340px;
+        }
+        .text{
+            width:100%;
+            height: 28px;
+            background-color: #DDA0DD;
+            border-radius: 5px;
+        }
+        .text h4{
+            text-align: center;
+            font-family: Ribeye;
+            color: white;
+        }
+        .text p{
+            font-family: Ribeye;
+            color: white;
+            font-size: 19px;
+        }
+        
+        .title {
+    color: rebeccapurple;
+}
+
+.fa-star {
+    cursor: pointer;
+}
+
+.on {
+    color: #FDE16D;
+}
+
+.off {
+    color: #CCC;
+}
+.btn {
+    display: inline-block; 
+    background: #DDA0DD; 
+    color: #fff; 
+    padding: 1rem 1.5rem; 
+    text-decoration: none; 
+    border-radius: 3px; 
+   }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="List">
+            <div class="col-md">
+                <ul class="menu-main">
+                    <li><a href="MainPage2.html">Home</a></li>
+                    <li><a href="" class="submenu-link">Anime</a>
+                        <ul class="submenu">
+                            <li><a href="file:///C:/Users/Aida/Desktop/WEB/Quiz1/index.html">Quiz</a></li>
+                            <li><a href="http://localhost/com/comment_system/comment.php">Chat</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="AnimeList.html" class="submenu-link">Popular</a>
+                        <ul class="submenu">
+                            <li><a href="AnimeList.html">OnePuchMan</a></li>
+                            <li><a href="">...</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#main3">Contacts</a></li>
+                    <li><a href="" class="submenu-link">Login</a>
+                        <ul class="submenu">
+                            <li><a href="">...</a></li>
+                            <li><a href="">...</a></li>
+                            <li><a href="">...</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row-md">
+                <div class="myAnime">
+                    <div class="anim">
+                        <div class="Discription">
+                        <div class="OnePice"><img src="https://animevost.org/uploads/posts/2015-09/1441540572_1.jpg" /></div>
+                        <div class="text">
+                            <h4>Ванпанч-Мен | Onepunchman | Onepunch-Man</h4>
+                            <div>
+                                <div id="star-div">
+                                    <span class="fa fa-star off"></span>
+                                    <span class="fa fa-star off"></span>
+                                    <span class="fa fa-star off"></span>
+                                    <span class="fa fa-star off"></span>
+                                    <span class="fa fa-star off"></span>
+                                </div>
+                            </div>
+                            <p><b>Год выхода:</b> 2015</p>
+                            <p><b>Жанр:</b> приключения, комедия, фэнтези, фантастика</p>
+                            <p><b>Количество серий:</b> 12 (25 мин.)</p>
+                            <p><b>Режиссёр:</b>Нацумэ Синго</p>
+                            <p><b>Описание:</b> Для человечества настали нелегкие времена: на матушку-Землю повадились, как к себе домой, разнообразные монстры родом из космоса, недр земли, научных лабораторий и бог знает откуда еще. Методично руша один город за другим, они несут смерть и разрушение, вселяя трепет в сердца сторонних наблюдателей. Но сторонним наблюдателям, кроме попадания под шальной удар очередного злодея, бояться нечего: на страже их покоя стоит наш главный герой, лысый молодой человек по фамилии Сайтама с выражением вселенской тоски на лице.</p>
+                        </div>
+                        </div>
+                        <div class="Quiz">
+                        <div> 
+                            <video width="800" height="400" poster="bla.png" autoplay="autoplay" controls="controls">
+                                <source src="anime.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                        <div>
+                            <a href="file:///C:/Users/Aida/Desktop/WEB/Quiz2/index.html" class="btn"  style="width:270px; margin-top: 200px;">Пройти тест</a>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+             
+        
+        </div>
+    </div>
+ 
+    <script  src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
