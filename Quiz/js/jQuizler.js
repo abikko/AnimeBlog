@@ -1,17 +1,6 @@
 (function($){
     $.fn.extend({
         jQuizler: function(questions) {
-            // @todo избавиться от возможности двойного клика по кнопкам "cследующий", "предыдущий", "результат"
-            // @todo добавить возможность выбора нескольких вариантов ответа
-            // @todo добавить возможность внедрения названия теста на страницу результатов
-            // @todo избавиться от зависимости Bootsrap CSS
-            // @todo поработать над стилем элементов кнопок и прогресса
-            // @todo добавить кнопки "поделиться" или "like" для разных соц сетей ("ВКонтакте", "Однолкассники", ...)
-            // @todo разобраться с проблемой клика по элементу кнопки на странице результатов
-            // @todo переписать код, сделать его более изящным и чистым
-            // @todo сделать так, чтобы плагин можно было применять для 2х и более тестов на страницу
-            // @todo создать online инструмент для формирования и редактирования вопросов
-
             if (questions == null)
                 throw 'No questions was provided.';
 
@@ -71,7 +60,7 @@
 
                 $.each(questions, function(index, question){
                     html += "<div id=\"question-" + (index + 1) + "\" class=\"slide-container question\">";
-                    //html += "<div class=\"question-number\">Вопрос " + (index + 1) + ' из ' + questions.length + "</div><div style=\"margin:0px; clear:both\"></div>";
+                   
 
                     html += question.question;
 
@@ -87,8 +76,7 @@
 
                     question.correct = correctAnswersNewIndexes;
 
-                    /*for (var i = 0; i < question.correct.length; i++)
-                     console.log(question.answers[correctAnswersNewIndexes[i]]);*/
+  
 
                     html += "<ul class=\"answers\">";
 
@@ -124,13 +112,10 @@
                 html += "<div id=\"percent\" class=\"bar\" style=\"width: 0%;\"></div>";
                 html += "</div>";
 
-                ///html += "<div style=\"margin:0px; clear:both\"></div>";
                 $(this).append(html);
 
                 $("div[id*='question-'] li").click(function(){
                     if (!reviewQuiz) {
-                        /*$(this).siblings().removeClass("selected");
-                        $(this).toggleClass("selected");*/
 
                         $(this).siblings().removeClass("btn-info");
                         $(this).toggleClass("btn-info");
@@ -163,10 +148,9 @@
 
                         var buttonsHTML = '';
                         $.each(questions, function(index, question){
-                            //console.log("Правильные ответы: " + question.correct);
+
 
                             var element = $("#question-" + (index+1) + " ul li.btn-info");
-                            //console.log("Ответ пользователя: " + element.index());
 
                             if (element.index() == question.correct) {
                                 element.removeClass("btn-info");
@@ -295,7 +279,7 @@
                         opacity : '0'
                     }, 500, function(e){
                         div.css('display', 'none');
-                        //div.find(".notice").css('display', 'none');
+
 
                         newQuestion.css({opacity : '0', height : '0px'});
 
